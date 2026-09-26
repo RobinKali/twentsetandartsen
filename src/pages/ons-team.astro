@@ -1,17 +1,22 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { Mail, Calendar, Linkedin } from 'lucide-vue-next';
+import Layout from "../layouts/Layout.astro";
+import { Mail, Calendar, Linkedin } from "lucide-vue-next";
 ---
 
 <Layout title="Ons Team">
   <!-- Hero Section -->
-  <section class="pt-32 pb-16 md:pt-40 md:pb-24 bg-slate-50 border-b border-slate-100">
+  <section
+    class="pt-32 pb-16 md:pt-40 md:pb-24 bg-slate-50 border-b border-slate-100"
+  >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
+      <h1
+        class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-4"
+      >
         Maak kennis met ons <span class="text-primary-600">team</span>
       </h1>
       <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto">
-        Deskundig, persoonlijk en altijd gericht op jouw lach. Ons team van specialisten staat dagelijks voor je klaar in Enschede.
+        Deskundig, persoonlijk en altijd gericht op jouw lach. Ons team van
+        specialisten staat dagelijks voor je klaar in Hengelo.
       </p>
     </div>
   </section>
@@ -20,69 +25,131 @@ import { Mail, Calendar, Linkedin } from 'lucide-vue-next';
   <section class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        
         <!-- Team Member 1 -->
-        <div class="group bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300">
+        <div
+          class="group bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300"
+        >
           <div class="aspect-square overflow-hidden relative bg-slate-100">
-            <img src="/images/team-1.jpg" alt="Dr. Sarah Jenkins" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <img
+              src="/images/team-1.jpg"
+              alt="Dr. Anne Mulderink"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6"
+            >
               <div class="flex gap-3">
-                <a href="#" class="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-primary-600 transition-colors">
+                <a
+                  href="#"
+                  class="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-primary-600 transition-colors"
+                >
                   <Linkedin class="w-5 h-5" />
                 </a>
               </div>
             </div>
           </div>
           <div class="p-8">
-            <div class="inline-flex items-center px-3 py-1 rounded-full bg-primary-50 text-primary-700 text-xs font-semibold mb-3">Tandarts / Praktijkhouder</div>
-            <h3 class="text-2xl font-bold text-slate-900 mb-2">Dr. Sarah Jenkins</h3>
-            <p class="text-slate-600 mb-6">Gespecialiseerd in algemene en esthetische tandheelkunde. Vindt persoonlijk contact erg belangrijk.</p>
-            <a href="/contact" class="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700 transition-colors">
+            <div
+              class="inline-flex items-center px-3 py-1 rounded-full bg-primary-50 text-primary-700 text-xs font-semibold mb-3"
+            >
+              Tandarts / Praktijkhouder
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900 mb-2">
+              Dr. Anne Mulderink
+            </h3>
+            <p class="text-slate-600 mb-6">
+              Gespecialiseerd in algemene en esthetische tandheelkunde. Vindt
+              persoonlijk contact erg belangrijk.
+            </p>
+            <a
+              href="/contact"
+              class="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700 transition-colors"
+            >
               <Calendar class="w-4 h-4" /> Afspraak inplannen
             </a>
           </div>
         </div>
 
         <!-- Team Member 2 -->
-        <div class="group bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300">
+        <div
+          class="group bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300"
+        >
           <div class="aspect-square overflow-hidden relative bg-slate-100">
-            <img src="/images/team-2.jpg" alt="Dr. Michael Chen" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <img
+              src="/images/team-2.jpg"
+              alt="Dr. Michael Langkamp"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6"
+            >
               <div class="flex gap-3">
-                <a href="#" class="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-primary-600 transition-colors">
+                <a
+                  href="#"
+                  class="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-primary-600 transition-colors"
+                >
                   <Linkedin class="w-5 h-5" />
                 </a>
               </div>
             </div>
           </div>
           <div class="p-8">
-            <div class="inline-flex items-center px-3 py-1 rounded-full bg-primary-50 text-primary-700 text-xs font-semibold mb-3">Tandarts / Implantoloog</div>
-            <h3 class="text-2xl font-bold text-slate-900 mb-2">Dr. Michael Chen</h3>
-            <p class="text-slate-600 mb-6">Heeft jarenlange ervaring in complexe gebitsrenovaties en implantologie met moderne technieken.</p>
-            <a href="/contact" class="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700 transition-colors">
+            <div
+              class="inline-flex items-center px-3 py-1 rounded-full bg-primary-50 text-primary-700 text-xs font-semibold mb-3"
+            >
+              Tandarts / Implantoloog
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900 mb-2">
+              Dr. Michael Langkamp
+            </h3>
+            <p class="text-slate-600 mb-6">
+              Heeft jarenlange ervaring in complexe gebitsrenovaties en
+              implantologie met moderne technieken.
+            </p>
+            <a
+              href="/contact"
+              class="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700 transition-colors"
+            >
               <Calendar class="w-4 h-4" /> Afspraak inplannen
             </a>
           </div>
         </div>
 
         <!-- Team Member 3 -->
-        <div class="group bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300">
+        <div
+          class="group bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300"
+        >
           <div class="aspect-square overflow-hidden relative bg-slate-100">
-            <img src="/images/team-3.jpg" alt="Sorah R." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <img
+              src="/images/team-3.jpg"
+              alt="Sorah R."
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6"
+            >
               <!-- social links can go here -->
             </div>
           </div>
           <div class="p-8">
-            <div class="inline-flex items-center px-3 py-1 rounded-full bg-primary-50 text-primary-700 text-xs font-semibold mb-3">Tandartsassistent & Preventie</div>
+            <div
+              class="inline-flex items-center px-3 py-1 rounded-full bg-primary-50 text-primary-700 text-xs font-semibold mb-3"
+            >
+              Tandartsassistent & Preventie
+            </div>
             <h3 class="text-2xl font-bold text-slate-900 mb-2">Sorah R.</h3>
-            <p class="text-slate-600 mb-6">Zorgt voor een ontspannen sfeer en helpt je gebit in topconditie te houden met professionele reiniging.</p>
-            <a href="/contact" class="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700 transition-colors">
+            <p class="text-slate-600 mb-6">
+              Zorgt voor een ontspannen sfeer en helpt je gebit in topconditie
+              te houden met professionele reiniging.
+            </p>
+            <a
+              href="/contact"
+              class="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700 transition-colors"
+            >
               <Calendar class="w-4 h-4" /> Afspraak inplannen
             </a>
           </div>
         </div>
-
       </div>
     </div>
   </section>

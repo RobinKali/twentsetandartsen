@@ -1,20 +1,27 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { Phone, AlertCircle, Clock } from 'lucide-vue-next';
+import Layout from "../layouts/Layout.astro";
+import { Phone, AlertCircle, Clock } from "lucide-vue-next";
 ---
 
 <Layout title="Spoed">
   <!-- Hero Section -->
-  <section class="pt-32 pb-16 md:pt-40 md:pb-24 bg-red-50 border-b border-red-100">
+  <section
+    class="pt-32 pb-16 md:pt-40 md:pb-24 bg-red-50 border-b border-red-100"
+  >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-100 text-red-600 mb-6">
+      <div
+        class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-100 text-red-600 mb-6"
+      >
         <AlertCircle class="w-8 h-8" />
       </div>
-      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
+      <h1
+        class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-4"
+      >
         Spoedgeval?
       </h1>
       <p class="text-lg md:text-xl text-slate-700 max-w-2xl mx-auto">
-        Heeft u acute pijn, een nabloeding of is er een tand uitgeslagen? Wacht dan niet en neem direct contact op.
+        Heeft u acute pijn, een nabloeding of is er een tand uitgeslagen? Wacht
+        dan niet en neem direct contact op.
       </p>
     </div>
   </section>
@@ -22,53 +29,83 @@ import { Phone, AlertCircle, Clock } from 'lucide-vue-next';
   <!-- Content Section -->
   <section class="py-20 bg-white">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-      
       <!-- Tijdens openingstijden -->
-      <div class="mb-12 p-8 rounded-3xl bg-white border-2 border-primary-100 shadow-lg shadow-primary-900/5 relative overflow-hidden">
+      <div
+        class="mb-12 p-8 rounded-3xl bg-white border-2 border-primary-100 shadow-lg shadow-primary-900/5 relative overflow-hidden"
+      >
         <div class="absolute top-0 left-0 w-2 h-full bg-primary-500"></div>
-        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3">
+        <h2
+          class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3"
+        >
           <Clock class="w-6 h-6 text-primary-500" /> Tijdens openingstijden
         </h2>
         <p class="text-slate-600 mb-6 text-lg">
-          Bel ons direct op ons reguliere telefoonnummer. We proberen u dezelfde dag nog te helpen.
+          Bel ons direct op ons reguliere telefoonnummer. We proberen u dezelfde
+          dag nog te helpen.
         </p>
-        <a href="tel:0531234567" class="inline-flex items-center gap-3 bg-primary-600 hover:bg-primary-700 text-white px-6 py-4 rounded-xl font-bold text-xl transition-all shadow-md">
-          <Phone class="w-6 h-6" /> 053 - 123 45 67
+        <a
+          href="tel:0742480768"
+          class="inline-flex items-center gap-3 bg-primary-600 hover:bg-primary-700 text-white px-6 py-4 rounded-xl font-bold text-xl transition-all shadow-md"
+        >
+          <Phone class="w-6 h-6" /> 074 - 248 07 68
         </a>
       </div>
 
       <!-- Buiten openingstijden -->
       <div class="mb-12 p-8 rounded-3xl bg-slate-50 border border-slate-200">
-        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3">
+        <h2
+          class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3"
+        >
           <Clock class="w-6 h-6 text-slate-500" /> Buiten openingstijden
         </h2>
         <p class="text-slate-600 mb-4">
-          In de avonduren (na 17:00 uur), in het weekend en tijdens feestdagen kunt u voor spoedeisende klachten terecht bij de Tandartsenpost Twente in Enschede.
+          In de avonduren (na 17:00 uur), in het weekend en tijdens feestdagen
+          kunt u voor spoedeisende klachten terecht bij de Tandartsenpost Twente
+          in Enschede.
         </p>
         <div class="bg-white p-6 rounded-2xl border border-slate-100 mt-6">
           <h3 class="font-bold text-slate-900 mb-2">Tandartsenpost Twente</h3>
-          <p class="text-slate-600 mb-4 text-sm">Beltstraat 43A, 7512 AC Enschede</p>
-          <a href="tel:0537920040" class="inline-flex items-center gap-2 text-slate-900 font-bold hover:text-primary-600 transition-colors text-lg">
-            <Phone class="w-5 h-5" /> 053 - 792 00 40
+          <p class="text-slate-600 mb-4 text-sm">
+            Beltstraat 43A, 7512 AC Enschede
+          </p>
+          <a
+            href="tel:0742480768"
+            class="inline-flex items-center gap-2 text-slate-900 font-bold hover:text-primary-600 transition-colors text-lg"
+          >
+            <Phone class="w-5 h-5" /> 074 - 248 07 68
           </a>
         </div>
       </div>
 
       <!-- Wat is een spoedgeval? -->
       <div class="prose prose-slate prose-lg max-w-none">
-        <h3 class="text-xl font-bold text-slate-900 mb-4">Wat is een spoedgeval?</h3>
-        <p class="text-slate-600">Niet elke klacht is direct een spoedgeval. We spreken van spoed bij:</p>
-        <ul class="space-y-2 text-slate-600 mt-4 list-disc pl-5 marker:text-primary-500">
+        <h3 class="text-xl font-bold text-slate-900 mb-4">
+          Wat is een spoedgeval?
+        </h3>
+        <p class="text-slate-600">
+          Niet elke klacht is direct een spoedgeval. We spreken van spoed bij:
+        </p>
+        <ul
+          class="space-y-2 text-slate-600 mt-4 list-disc pl-5 marker:text-primary-500"
+        >
           <li>Uitgeslagen of afgebroken tand door een ongeval.</li>
-          <li>Onophoudelijke nabloeding na het trekken van een tand of kies.</li>
-          <li>Acute, onhoudbare kiespijn die niet met pijnstillers te onderdrukken is.</li>
+          <li>
+            Onophoudelijke nabloeding na het trekken van een tand of kies.
+          </li>
+          <li>
+            Acute, onhoudbare kiespijn die niet met pijnstillers te onderdrukken
+            is.
+          </li>
           <li>Een dikke wang gepaard met koorts en slikklachten.</li>
         </ul>
         <p class="text-slate-600 mt-6 text-sm">
-          <em>Let op: uitgevallen vullingen, losse kronen of milde pijnklachten vallen doorgaans niet onder spoed. Neem hiervoor de volgende werkdag contact met ons op.</em>
+          <em
+            >Let op: uitgevallen vullingen, losse kronen of milde pijnklachten
+            vallen doorgaans niet onder spoed. Neem hiervoor de volgende werkdag
+            contact met ons op.</em
+          >
         </p>
       </div>
-      
     </div>
   </section>
 </Layout>
