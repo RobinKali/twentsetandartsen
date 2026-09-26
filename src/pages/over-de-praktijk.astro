@@ -1,0 +1,82 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Heart, ShieldCheck, Clock, Zap } from 'lucide-vue-next';
+---
+
+<Layout title="Over de Praktijk">
+  <!-- Hero Section -->
+  <section class="pt-32 pb-16 md:pt-40 md:pb-24 bg-slate-50 border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
+        Over <span class="text-primary-600">Twentse Tandartsen</span>
+      </h1>
+      <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto">
+        Dé moderne tandartspraktijk in Enschede waar kwaliteit en persoonlijk contact hand in hand gaan.
+      </p>
+    </div>
+  </section>
+
+  <!-- Visie Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row gap-16 items-center">
+        <div class="lg:w-1/2">
+          <div class="grid grid-cols-2 gap-4">
+            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Praktijk ruimte" class="rounded-2xl shadow-lg w-full h-64 object-cover" />
+            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Moderne apparatuur" class="rounded-2xl shadow-lg w-full h-64 object-cover mt-8" />
+          </div>
+        </div>
+        <div class="lg:w-1/2">
+          <h2 class="text-3xl font-bold text-slate-900 mb-6">Onze Visie</h2>
+          <p class="text-lg text-slate-600 leading-relaxed mb-6">
+            Bij Twentse Tandartsen geloven we dat een tandartsbezoek niet spannend of vervelend hoeft te zijn. Onze missie is om hoogwaardige, pijnvrije en moderne mondzorg te bieden in een ontspannen en vertrouwde omgeving. 
+          </p>
+          <p class="text-lg text-slate-600 leading-relaxed mb-8">
+            We nemen de tijd om naar uw wensen te luisteren. Transparantie staat voorop; we bespreken altijd vooraf de behandelopties en kosten, zodat u nooit voor verrassingen komt te staan.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="flex items-start gap-3">
+              <Heart class="w-6 h-6 text-primary-500 shrink-0 mt-1" />
+              <div>
+                <h4 class="font-bold text-slate-900">Persoonlijk</h4>
+                <p class="text-slate-600 text-sm">Oprechte aandacht voor elke patiënt.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <ShieldCheck class="w-6 h-6 text-primary-500 shrink-0 mt-1" />
+              <div>
+                <h4 class="font-bold text-slate-900">Kwaliteit</h4>
+                <p class="text-slate-600 text-sm">Altijd behandeld volgens de nieuwste richtlijnen.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <Zap class="w-6 h-6 text-primary-500 shrink-0 mt-1" />
+              <div>
+                <h4 class="font-bold text-slate-900">Modern</h4>
+                <p class="text-slate-600 text-sm">Digitale technieken voor uw comfort.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <Clock class="w-6 h-6 text-primary-500 shrink-0 mt-1" />
+              <div>
+                <h4 class="font-bold text-slate-900">Flexibel</h4>
+                <p class="text-slate-600 text-sm">Ruime openingstijden, ook in de avond.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-24 bg-primary-50 text-center">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-slate-900 mb-6">Kom langs voor een kennismaking</h2>
+      <p class="text-lg text-slate-600 mb-10">We heten u van harte welkom in onze moderne praktijk in Enschede.</p>
+      <a href="/contact" class="inline-flex justify-center items-center bg-primary-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary-700 transition-colors shadow-lg shadow-primary-600/20">
+        Inschrijven als patiënt
+      </a>
+    </div>
+  </section>
+</Layout>

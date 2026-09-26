@@ -1,0 +1,165 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ArrowRight, CheckCircle2, PhoneCall, Calendar } from 'lucide-vue-next';
+---
+
+<Layout title="Home">
+  <!-- Hero Section -->
+  <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-slate-50">
+    <div class="absolute inset-0 z-0">
+      <div class="absolute inset-0 bg-gradient-to-br from-primary-50/80 to-white/90 z-10"></div>
+      <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Moderne tandartspraktijk" class="w-full h-full object-cover" />
+    </div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-100 text-primary-700 font-medium text-sm mb-6">
+          <span class="w-2 h-2 rounded-full bg-primary-500"></span>
+          Nieuwe patiënten welkom
+        </div>
+        <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
+          Moderne tandzorg met een <span class="text-primary-600">persoonlijke</span> touch.
+        </h1>
+        <p class="text-xl text-slate-600 mb-10 max-w-2xl leading-relaxed">
+          Bij Twentse Tandartsen combineren we de nieuwste technologieën met oprechte aandacht voor jouw glimlach. Ervaar comfortabele en professionele mondzorg in hartje Enschede.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="/contact" class="inline-flex justify-center items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all shadow-lg shadow-primary-600/30">
+            <Calendar class="w-5 h-5" />
+            Maak een afspraak
+          </a>
+          <a href="tel:0531234567" class="inline-flex justify-center items-center gap-2 bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 px-8 py-4 rounded-xl font-semibold text-lg transition-all shadow-sm">
+            <PhoneCall class="w-5 h-5 text-primary-600" />
+            053 - 123 45 67
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- USP Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Waarom kiezen voor ons?</h2>
+        <p class="text-lg text-slate-600">Wij geloven in transparante, pijnvrije en duurzame tandheelkunde.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl hover:shadow-primary-900/5 transition-all duration-300">
+          <div class="w-14 h-14 bg-primary-100 rounded-xl flex items-center justify-center mb-6 text-primary-600">
+            <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Persoonlijke Aandacht</h3>
+          <p class="text-slate-600 leading-relaxed">Bij ons ben je geen nummer. We nemen de tijd om naar je wensen te luisteren en stellen je altijd op je gemak.</p>
+        </div>
+        
+        <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl hover:shadow-primary-900/5 transition-all duration-300">
+          <div class="w-14 h-14 bg-primary-100 rounded-xl flex items-center justify-center mb-6 text-primary-600">
+            <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Moderne Apparatuur</h3>
+          <p class="text-slate-600 leading-relaxed">We maken gebruik van de nieuwste digitale technieken voor snellere, nauwkeurigere en comfortabelere behandelingen.</p>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl hover:shadow-primary-900/5 transition-all duration-300">
+          <div class="w-14 h-14 bg-primary-100 rounded-xl flex items-center justify-center mb-6 text-primary-600">
+            <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Ruime Openingstijden</h3>
+          <p class="text-slate-600 leading-relaxed">We zijn flexibel. Ook buiten standaard kantooruren kun je bij ons terecht voor uitstekende mondzorg.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Treatments Preview Section -->
+  <section class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div class="max-w-2xl">
+          <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Onze Behandelingen</h2>
+          <p class="text-lg text-slate-600">Van preventieve controle tot complexe ingrepen. Wij bieden complete tandheelkundige zorg onder één dak.</p>
+        </div>
+        <a href="/behandelingen" class="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700 transition-colors">
+          Bekijk alle behandelingen
+          <ArrowRight class="w-5 h-5" />
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {['Algemene Tandheelkunde', 'Mondhygiëne & Preventie', 'Esthetische Tandheelkunde', 'Implantologie'].map((treatment, i) => (
+          <a href="/behandelingen" class="group relative overflow-hidden rounded-2xl bg-white border border-slate-100 p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div class="w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center mb-6 text-primary-600 group-hover:scale-110 transition-transform duration-300">
+              <CheckCircle2 class="w-6 h-6" />
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">{treatment}</h3>
+            <p class="text-slate-500 text-sm mb-4">Professionele zorg afgestemd op jouw persoonlijke situatie.</p>
+            <span class="inline-flex items-center text-sm font-semibold text-primary-600">
+              Lees meer <ArrowRight class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+            </span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Preview Section -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row items-center gap-16">
+        <div class="lg:w-1/2">
+          <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Ontmoet ons gepassioneerde team</h2>
+          <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+            Ons team van ervaren tandartsen, mondhygiënisten en assistenten staat dagelijks klaar om jou de best mogelijke zorg te bieden. We werken nauw samen en volgen continu bijscholing om op de hoogte te blijven van de nieuwste ontwikkelingen.
+          </p>
+          <ul class="space-y-4 mb-10">
+            <li class="flex items-center gap-3 text-slate-700 font-medium">
+              <CheckCircle2 class="w-5 h-5 text-primary-500" /> BIG-geregistreerde professionals
+            </li>
+            <li class="flex items-center gap-3 text-slate-700 font-medium">
+              <CheckCircle2 class="w-5 h-5 text-primary-500" /> Jarenlange ervaring
+            </li>
+            <li class="flex items-center gap-3 text-slate-700 font-medium">
+              <CheckCircle2 class="w-5 h-5 text-primary-500" /> Gespecialiseerd in angstbegeleiding
+            </li>
+          </ul>
+          <a href="/ons-team" class="inline-flex justify-center items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-xl font-semibold transition-colors">
+            Maak kennis met het team
+          </a>
+        </div>
+        <div class="lg:w-1/2 grid grid-cols-2 gap-4 relative">
+          <div class="space-y-4 translate-y-8">
+            <img src="/images/team-1.jpg" alt="Tandarts" class="rounded-2xl shadow-lg w-full object-cover aspect-[3/4]" />
+          </div>
+          <div class="space-y-4">
+            <img src="/images/team-2.jpg" alt="Tandarts" class="rounded-2xl shadow-lg w-full object-cover aspect-[3/4]" />
+            <img src="/images/team-3.jpg" alt="Assistente" class="rounded-2xl shadow-lg w-full object-cover aspect-square" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="relative py-24 bg-primary-900 overflow-hidden">
+    <!-- Decorative background elements -->
+    <div class="absolute inset-0 opacity-10">
+      <svg class="absolute left-0 top-0 h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M0 100 C 20 0 50 0 100 100 Z" fill="currentColor"></path>
+      </svg>
+    </div>
+    
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Klaar voor een stralende glimlach?</h2>
+      <p class="text-xl text-primary-100 mb-10 max-w-2xl mx-auto">
+        Schrijf je vandaag nog in als nieuwe patiënt. We verwelkomen je graag in onze moderne praktijk.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="/contact" class="inline-flex justify-center items-center gap-2 bg-white text-primary-900 hover:bg-slate-50 px-8 py-4 rounded-xl font-bold text-lg transition-colors">
+          Inschrijven als patiënt
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

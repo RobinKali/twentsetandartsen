@@ -1,0 +1,99 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Stethoscope, Sparkles, Smile, ShieldAlert } from 'lucide-vue-next';
+---
+
+<Layout title="Behandelingen">
+  <!-- Hero Section -->
+  <section class="pt-32 pb-16 md:pt-40 md:pb-24 bg-slate-50 border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
+        Onze <span class="text-primary-600">Behandelingen</span>
+      </h1>
+      <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto">
+        Complete en professionele mondzorg onder één dak. Ontdek onze diensten.
+      </p>
+    </div>
+  </section>
+
+  <!-- Treatments Grid -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Treatment Card 1 -->
+        <div class="flex flex-col sm:flex-row gap-6 p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl hover:shadow-primary-900/5 transition-all duration-300">
+          <div class="w-16 h-16 shrink-0 bg-white rounded-2xl flex items-center justify-center shadow-sm text-primary-600">
+            <Stethoscope class="w-8 h-8" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-slate-900 mb-3">Algemene Tandheelkunde</h3>
+            <p class="text-slate-600 mb-4 leading-relaxed">
+              Periodieke controles, het vullen van gaatjes en wortelkanaalbehandelingen. Wij zorgen ervoor dat uw gebit gezond blijft en pijnvrij is.
+            </p>
+            <ul class="space-y-2 text-sm font-medium text-slate-700">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-500"></span> Periodieke Controle</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-500"></span> Vullingen</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-500"></span> Wortelkanaalbehandeling</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Treatment Card 2 -->
+        <div class="flex flex-col sm:flex-row gap-6 p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl hover:shadow-primary-900/5 transition-all duration-300">
+          <div class="w-16 h-16 shrink-0 bg-white rounded-2xl flex items-center justify-center shadow-sm text-primary-600">
+            <Sparkles class="w-8 h-8" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-slate-900 mb-3">Preventie & Mondhygiëne</h3>
+            <p class="text-slate-600 mb-4 leading-relaxed">
+              Voorkomen is beter dan genezen. Onze preventie-assistenten en mondhygiënisten helpen u bij het behouden van een optimaal schoon gebit.
+            </p>
+            <ul class="space-y-2 text-sm font-medium text-slate-700">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-500"></span> Gebitsreiniging</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-500"></span> Tandvleesbehandeling</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-500"></span> Poetsinstructies</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Treatment Card 3 -->
+        <div class="flex flex-col sm:flex-row gap-6 p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl hover:shadow-primary-900/5 transition-all duration-300">
+          <div class="w-16 h-16 shrink-0 bg-white rounded-2xl flex items-center justify-center shadow-sm text-primary-600">
+            <Smile class="w-8 h-8" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-slate-900 mb-3">Esthetische Tandheelkunde</h3>
+            <p class="text-slate-600 mb-4 leading-relaxed">
+              Een stralende witte lach geeft zelfvertrouwen. Wij bieden veilige tandenbleek methodes, facings en onzichtbare beugels aan.
+            </p>
+            <ul class="space-y-2 text-sm font-medium text-slate-700">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-500"></span> Tanden Bleken</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-500"></span> Facings (Composiet/Porselein)</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-500"></span> Onzichtbare Beugel (Aligners)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Treatment Card 4 -->
+        <div class="flex flex-col sm:flex-row gap-6 p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl hover:shadow-primary-900/5 transition-all duration-300">
+          <div class="w-16 h-16 shrink-0 bg-white rounded-2xl flex items-center justify-center shadow-sm text-primary-600">
+            <ShieldAlert class="w-8 h-8" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-slate-900 mb-3">Implantologie & Protheses</h3>
+            <p class="text-slate-600 mb-4 leading-relaxed">
+              Ontbrekende tanden vullen we prachtig en functioneel op met behulp van implantaten, kronen, bruggen of een (klik)kunstgebit.
+            </p>
+            <ul class="space-y-2 text-sm font-medium text-slate-700">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-500"></span> Implantaten</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-500"></span> Kronen & Bruggen</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-500"></span> (Klik)protheses</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</Layout>
